@@ -1,0 +1,12 @@
+---
+# python-launch:
+#   - type: debugpy
+#   - type-path: /Users/eid/Developer/open-source/debugpy/src/debugpy/adapter
+#   - request: launch
+#   - program: ./test.py
+
+name: mock-vscode
+type: mock
+type-path: /Users/eid/Developer/open-source/vscode-mock-debug/out/debugAdapter.js
+program: ./readme.md
+request: launch
