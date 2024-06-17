@@ -4,20 +4,20 @@ use std::collections::HashMap;
 
 #[derive(Debug, Deserialize)]
 pub struct DebuggerConfig {
-    name: String,
+    pub name: String,
 
     #[serde(rename = "type")]
-    program_type: String,
+    pub program_type: String,
 
     #[serde(rename = "type-path")]
-    type_path: String,
-    request: RequestType,
-    program: String,
+    pub type_path: String,
+    pub request: RequestType,
+    pub program: String,
 }
 
 #[derive(Debug, Deserialize)]
 #[serde(rename_all = "lowercase")]
-enum RequestType {
+pub enum RequestType {
     Launch,
     Attach,
 }

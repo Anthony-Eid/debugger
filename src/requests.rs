@@ -1,6 +1,7 @@
 use serde::{Deserialize, Serialize};
 
-enum Request {
+#[derive(Debug, Deserialize, Serialize)]
+pub enum Request {
     InitializeRequest(InitializeRequestArguments),
 }
 
